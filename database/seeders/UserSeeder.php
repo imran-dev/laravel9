@@ -12,7 +12,7 @@ class UserSeeder extends Seeder {
      *
      * @return void
      */
-    public function run() {
+    public function run(): void {
         $user_data = User::where('email', 'imrancse019@gmail.com')->first();
         if (is_null($user_data)) {
             $user           = new User();
