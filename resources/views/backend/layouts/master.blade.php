@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('backend/template/static/logo-small.svg') }}">
 
     @include('backend.layouts.partials.styles')
+    @yield('styles')
 </head>
 
 <body>
@@ -27,6 +28,7 @@
     </div>
 
     @include('backend.layouts.partials.scripts')
+    @yield('scripts')
 </body>
 
 </html>
